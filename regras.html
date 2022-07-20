@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juju App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Juju Feliz</h1>
+            <div class="btn1">
+                <h3>Regras:</h3>
+                <p>Não abuse, não é para sair lendo todos de uma vez não!</p>
+                <p>Sempre que for usar, deve falar para o Vinícius que seu dia foi ruim!</p>
+                <p>Usar apenas quando estiver triste!</p>
+                <p>Nunca esquecer que eu te amo <3!</p>
+            </div>
+
+            <a class="btn" id="name" href="index.html">Voltar</a>
+
+
+        </div>
+    </div>
+
+<div id="modal" class="hide">
+    <div class="content">
+        <div class="header">
+            <h1>Insira seu nome !</h1>
+            <a href="#">Fechar</a>
+        </div>
+        <form action="quiz.php" id="form-modal">
+            <label for="name"></label>
+            <div class="name field">
+                <input 
+                id="input-name"
+                type="text" 
+                name="name"
+                value=""
+                placeholder="Digite um nome..."
+                >
+                <button>
+                    <img src="../assets/play.svg" alt="Jogar">
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="../scripts/modal.js"></script>
+</body>
+</html>
